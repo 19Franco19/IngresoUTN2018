@@ -1,5 +1,5 @@
 function Mostrar()
-{
+{var laHora
 //tomo la hora 
 var laHora = document.getElementById('hora').value;
 
