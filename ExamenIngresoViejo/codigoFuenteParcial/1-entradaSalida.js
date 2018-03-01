@@ -8,6 +8,5 @@ function Mostrar()
     perimetro= Lado * 3
 
     alert("El Perimetro de este triangulo equilatero es " +  perimetro);
-
 }
 

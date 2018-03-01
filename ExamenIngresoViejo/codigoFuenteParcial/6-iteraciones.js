@@ -30,6 +30,3 @@ function Mostrar()
 alert("La mayor venta fue $ " + ventaMayor + " y la menor venta $ " + ventaMenor);    
 }
 
-    
-
-
