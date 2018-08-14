@@ -1,59 +1,62 @@
 function mostrar()
 {
 	
-	var EstaciondelAño;
-	var Temperatura;
+	var estaciondelAño;
+	var temperatura;
 
-	EstaciondelAño= prompt("Ingrese una Estacion");
-	Temperatura=prompt("Ingrese la temperatura");
-
-	switch (EstaciondelAño)
-
+	estaciondelAño=prompt("Ingrese una estacion del año:");
+	temperatura=prompt("Ingrese la temperatura:");
+	
+	switch(estaciondelAño)
 	{
 		case "invierno":
-			if(Temperatura >= 1 && Temperatura <= 5)
+			if(temperatura >= 1 && temperatura <= 5)
 			{
 				alert("Que fresquete");
 			}
 			break;
+		case "primavera":
+		case "verano":
+			if (temperatura > 32) 
+			{
+				alert("Es un horno!!!");
+			}
+			if(temperatura <= 32 && temperatura >= 20 )
+			{
+				alert("Que calorcito!!!");
+			}
+			break;
 		case "otoño":
-			if (Temperatura == 15) 
+			if (temperatura == 15) 
 			{
 				alert("Esta lindo");
 			}
-
-			else if (Temperatura > 15 && Temperatura <= 21) 
+			if(temperatura < 15)
+			{
+				alert("Se vino el frio");
+			}
+			if (temperatura > 15 && temperatura <= 21)
 			{
 				alert("Esta re bueno");
 			}
-			 else if (Temperatura < 15) 
-			 	{
-			 		alert("Se vino el frio");
-				}
-			 if (Temperatura > 21) 
-			 {
-			 	alert("Mucho calor para el otoño");
-			 }
-			 break;
-
-
-		case "primavera":
-		case "verano":
-			if(Temperatura > 32 )
+			if(temperatura > 21)
 			{
-				alert("Es un horno");
+				alert("Mucho calor para el otoño");
 			}
-			else if (Temperatura < 32 && Temperatura > 20) 
-			{
-				alert("Que Calorcito");
-			}	
 			break;
+
 
 
 
 
 
 	}
+
+
+
+
+
+	
 
 
 

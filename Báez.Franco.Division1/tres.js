@@ -1,19 +1,21 @@
 function mostrar()
 {
-	var Importe;
-	var Cantidad;
-	var Nombre;
+	var ImporteProducto;
+	var NombreProducto;
+	var CantidadProducto;
+	var PrecioconIVA;
 	var IVA;
-	var ImporteConIVA;
-	
-	Importe=parseInt(prompt("Ingrese el Importe del producto: "));
-	
-	Cantidad=parseInt(prompt("Ingrese la Cantidad del producto: "));
-	
-	Nombre=prompt("Ingrese el nombre del producto: ");
-	
-	IVA=Importe * 0.21;
-	ImporteConIVA= parseInt(Importe + IVA) * Cantidad;
+	var PrecioCantidad;
+	ImporteProducto=parseInt(prompt("Ingrese el Importe del producto:"));
+	NombreProducto=prompt("Ingrese el Nombre del producto:");
+	CantidadProducto=parseInt(prompt("Ingrese la Cantidad del producto:"));
 
-	alert("Compro la cantidad de " + Cantidad + " del producto " + Nombre + " a un precio de " + Importe + " pagando el precio de " + ImporteConIVA + " con IVA incluido");
+	IVA=(ImporteProducto * CantidadProducto) * 0.21;
+	PrecioconIVA= (ImporteProducto * CantidadProducto) + parseInt(IVA);
+	PrecioCantidad= ImporteProducto * CantidadProducto
+	alert("Compro la cantidad de " + CantidadProducto + " del producto " + NombreProducto + " a un precio de " + PrecioCantidad + " pagando el precio de " + PrecioconIVA + " con IVA incluido");   
+
+
+
+
 }

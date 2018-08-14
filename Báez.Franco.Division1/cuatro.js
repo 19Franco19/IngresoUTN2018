@@ -1,29 +1,49 @@
 function mostrar()
 {
-	
-	
-	var Numero;
-	var numeroMayor;
-	var NumeroMenor;
+	var NumeroUno;
+	var NumeroDos;
+	var NumeroTres;
 
-	Numero=prompt("Ingrese el primer numero: ");
-	Numero=prompt("Ingrese el segundo numero: ");
-	Numero=prompt("Ingrese el tercer numero: ");
+	NumeroUno=parseInt(prompt("Ingrese un primer numero:"));
+	NumeroDos=parseInt(prompt("Ingrese un segundo numero:"));
+	NumeroTres=parseInt(prompt("Ingrese un tercer numero:"));
 
-	numeroMayor= Numero
-	NumeroMenor=numero
-		
-	
-	
-	if(Numero > numeroMayor)
-	{
-		Numero=numeroMayor
-		alert("El " + Numero + "es el mayor");
-	}
+	if ( NumeroUno > NumeroDos && NumeroUno > NumeroTres) 
+		{
+    	alert("El " + NumeroUno + " es el mayor");
+    	}
+    else if ( NumeroDos > NumeroTres)
+    	{
+ 		alert("El " + NumeroDos + " es el mayor");
+ 		}
 	else
-	{
-		Numero=NumeroMenor
-		alert("El " + Numero + " es el menor");	
-	}
-	
+		{
+		alert("El " + NumeroTres + " es el mayor");
+		}
+
+	if ( NumeroUno < NumeroDos && NumeroUno < NumeroTres) 
+		{
+    	alert("El " + NumeroUno + " es el menor");
+    	}
+    else if ( NumeroDos < NumeroTres)
+    	{
+ 		alert("El " + NumeroDos + " es el menor");
+ 		}
+	else
+		{
+		alert("El " + NumeroTres + " es el menor");
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

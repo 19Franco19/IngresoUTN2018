@@ -1,13 +1,20 @@
 function mostrar()
 {
 	var mesdelAño;
-	mesdelAño=prompt("Ingrese un mes del año: ");
+	
+	mesdelAño=prompt("Ingrese un mes del año:");
 
-	switch (mesdelAño)
-    {
+	switch(mesdelAño)
+	{
 		case "febrero":
-		alert("Es Febrero y por lo tanto tiene 28 dias");
-		break;
+			alert("Es Febrero y por lo tanto tiene 28 dias");
+			break;
+		case "abril":
+		case "junio":
+		case "septiembre":
+		case "noviembre":
+			alert("Tiene 30 dias");
+			break;
 		case "enero":
 		case "marzo":
 		case "mayo":
@@ -15,17 +22,15 @@ function mostrar()
 		case "agosto":
 		case "octubre":
 		case "diciembre":
-		alert("Tiene 31 dias");
-		break;
+			alert("Tiene 31 dias");
+			break;
+		default:
+			alert("Error, ingrese un mes valido");
 
-        case "abril":
-        case "junio":
-        case "septiembre":
-        case "noviembre":
-        alert("Tiene 30 dias");
-        break;
-        default:
-        alert("Error. Ingrese un mes valido");
+
+
+
+
 	}
 
 }
